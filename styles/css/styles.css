@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* -------------- principal colors ---------------*/
+/*---------fonts----------------*/
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.header-section .brand-container {
+  margin: 13px 0 12px 30px;
+  display: flex;
+  align-items: center;
+  width: 35px;
+}
+.header-section .brand-container .brand-img {
+  margin-right: 21px;
+  width: 33px;
+  height: 35px;
+}
+.header-section .brand-container .brand-name-box {
+  display: none;
+}
+.header-section .brand-container .brand-name-box .brand-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #707070;
+  text-align: left;
+  text-transform: uppercase;
+}
+.header-section .brand-container .brand-name-box .brand-second-name {
+  margin-top: 4px;
+  font-family: "Questrial", sans-serif;
+  font-size: 1px;
+  line-height: 7px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #d1cdcd;
+  text-transform: uppercase;
+}
+.header-section .checkbox-menu {
+  display: none;
+}
+.header-section .checkbox-menu:checked ~ .show-menu .burguer-menu {
+  display: none;
+}
+.header-section .checkbox-menu:checked ~ .show-menu .close-menu {
+  display: block;
+}
+.header-section .checkbox-menu:checked ~ .menu-container {
+  display: flex;
+}
+.header-section .show-menu {
+  margin-right: 30px;
+}
+.header-section .show-menu .close-menu {
+  display: none;
+}
+.header-section .menu-container {
+  background-color: #fc758c;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.header-section .menu-container .menu-item {
+  margin-top: 10px;
+  height: 40px;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.header-section .menu-container .item-search {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header-section {
+    flex-wrap: nowrap;
+    height: 100px;
+  }
+  .header-section .brand-container {
+    margin: 33px 0 30px 50px;
+    width: 186px;
+  }
+  .header-section .brand-container .brand-name-box {
+    display: block;
+  }
+  .header-section .show-menu {
+    display: none;
+  }
+  .header-section .menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    background-color: #ffff;
+    cursor: pointer;
+  }
+  .header-section .menu-container .menu-item {
+    margin: 0 60px 0 0;
+    width: auto;
+    height: 36px;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #707070;
+  }
+  .header-section .menu-container .item-selected {
+    margin-right: 28px;
+    width: 82px;
+    height: 36px;
+    background-color: #fc758c;
+    color: #ffff;
+  }
+  .header-section .menu-container .item-search {
+    display: block;
+  }
+}
+@media (min-width: 1240px) {
+  .header-section .brand-container {
+    margin: 33px 0 30px 160px;
+  }
+  .header-section .menu-container .item-search {
+    margin-right: 176px;
+  }
+}
+.page-container .hero-section {
+  width: 100%;
+  height: 450px;
+  background-color: #fc758c;
+}
+.page-container .hero-section .hero-section-title {
+  margin: auto;
+  padding-top: 100px;
+  font-family: "Questrial", sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.page-container .hero-section .hero-section-text {
+  margin: auto;
+  margin-top: 20px;
+  font-family: "Questrial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 3px;
+  width: 320px;
+  color: #ffff;
+}
+.page-container .hero-section .button-our-work {
+  margin: auto;
+  margin-top: 60px;
+  width: 171px;
+  height: 41px;
+  background-color: #ffff;
+  color: #fc758c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  line-height: 41px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .page-container .hero-section {
+    height: 902px;
+  }
+  .page-container .hero-section .hero-section-title {
+    padding-top: 351px;
+    width: 831px;
+    font-family: "Questrial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 17px;
+  }
+  .page-container .hero-section .hero-section-text {
+    margin-top: 47px;
+    width: 578px;
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+}
+.page-container .grid-section {
+  margin: auto;
+  max-width: 375px;
+}
+.page-container .grid-section .grid-buttons {
+  margin-top: 35px;
+  margin-bottom: 69px;
+  text-align: center;
+  line-height: 15px;
+}
+.page-container .grid-section .grid-buttons .bttn-grid {
+  margin-right: 23px;
+  width: 15px;
+  height: 15px;
+}
+.page-container .grid-section .menu-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+}
+.page-container .grid-section .menu-container .menu-item {
+  margin: 0 60px 0 0;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 3px;
+  height: 36px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #707070;
+  cursor: pointer;
+}
+.page-container .grid-section .menu-container .item-selected {
+  margin-right: 28px;
+  width: 82px;
+  height: 36px;
+  background-color: #fc758c;
+  color: #ffff;
+}
+.page-container .grid-section .grid-container {
+  margin-top: 83px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+.page-container .grid-section .grid-container .grid-left {
+  display: grid;
+  grid-template-rows: 250px 350px 400px;
+  grid-gap: 30px;
+}
+.page-container .grid-section .grid-container .grid-center {
+  display: grid;
+  grid-template-rows: 200px 300px 350px;
+  grid-gap: 30px;
+}
+.page-container .grid-section .grid-container .grid-right {
+  display: grid;
+  grid-template-rows: 250px 350px 400px 320px;
+  grid-gap: 30px;
+}
+.page-container .grid-section .grid-column .grid-item {
+  position: relative;
+  background-color: #d1cdcd;
+}
+.page-container .grid-section .grid-column .grid-item .grid-item-img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.page-container .grid-section .grid-column .grid-item .grid-item-hover {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #fc758c;
+  opacity: 0.9;
+}
+.page-container .grid-section .grid-column .grid-item .grid-item-hover .brand-info-box {
+  text-align: center;
+}
+.page-container .grid-section .grid-column .grid-item .grid-item-hover .brand-info-box .brand-slogan {
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  line-height: 12px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFF;
+}
+.page-container .grid-section .grid-column .grid-item .grid-item-hover .brand-info-box .brand-title {
+  font-family: "Questrial", sans-serif;
+  font-size: 12px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: #FFFF;
+  width: 100%;
+}
+.page-container .grid-section .grid-column .grid-item .grid-item-hover .brand-info-box .brand-line {
+  margin: auto;
+  width: 140px;
+  height: 2px;
+  background-color: #ffff;
+}
+.page-container .grid-section .grid-column .grid-item:hover .grid-item-hover {
+  display: flex;
+}
+.page-container .grid-section .button-show {
+  margin: 39px auto 76px auto;
+  width: 171px;
+  height: 36px;
+  background-color: #fc758c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  line-height: 41px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .page-container .grid-section {
+    max-width: 768px;
+  }
+  .page-container .grid-section .grid-container {
+    margin-top: 83px;
+    height: 1460px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .page-container .grid-section .grid-container .grid-left {
+    display: grid;
+    grid-template-rows: 320px 600px 480px;
+    grid-gap: 30px;
+  }
+  .page-container .grid-section .grid-container .grid-center {
+    display: grid;
+    grid-template-rows: 250px 475px 675px;
+    grid-gap: 30px;
+  }
+  .page-container .grid-section .grid-container .grid-right {
+    display: grid;
+    grid-template-rows: 540px 270px 300px 260px;
+    grid-gap: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-container .grid-section {
+    max-width: 1171px;
+  }
+  .page-container .grid-section .menu-container {
+    display: flex;
+  }
+  .page-container .grid-section .grid-column .grid-item .grid-item-hover .brand-info-box .brand-slogan {
+    margin: 0;
+    font-size: 15px;
+    line-height: 60px;
+  }
+  .page-container .grid-section .grid-column .grid-item .grid-item-hover .brand-info-box .brand-title {
+    font-size: 20px;
+  }
+  .page-container .grid-section .grid-column .grid-item .grid-item-hover .brand-info-box .brand-line {
+    width: 270px;
+  }
+}
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.footer-section .footer-text {
+  margin-bottom: 46px;
+  display: block;
+  height: 13px;
+  width: 100%;
+  font-family: "Questrial", sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #d1cdcd;
+}
+.footer-section .footer-text .footer-text-decoration {
+  color: #fc758c;
+}
+.footer-section .footer-item {
+  margin-right: 20px;
+  margin-bottom: 77px;
+  color: #d1cdcd;
+  width: 16px;
+  height: 16px;
+  display: block;
+  cursor: pointer;
+}
+.footer-section .footer-item:hover {
+  color: #fc758c;
+}
+
+/*# sourceMappingURL=styles.css.map */

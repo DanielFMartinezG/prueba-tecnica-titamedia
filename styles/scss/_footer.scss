@@ -1,0 +1,29 @@
+.footer-section{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  .footer-text{
+    margin-bottom: 46px;
+    display: block;
+    height: 13px;
+    width: 100%;
+    @include questrial-font(13px,13px,2px);
+    color: $light-grey;
+    .footer-text-decoration{  
+      color: $rose;
+    }
+  }
+  .footer-item{
+    margin-right: 20px;
+    margin-bottom: 77px;
+    color: $light-grey;
+    width: 16px;
+    height: 16px;
+    display: block;
+    cursor: pointer;
+    &:hover{
+      color: $rose;
+    }
+  }
+}

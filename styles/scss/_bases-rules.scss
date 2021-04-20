@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* -------------- principal colors ---------------*/
+$rose : #fc758c;
+$dark-grey: #707070;
+$light-grey: #d1cdcd;
+/*---------fonts----------------*/
+// Función para font-montserrant
+@mixin montserrant-font($s,$h,$w,$ls) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $s;
+  line-height: $h;
+  font-weight: $w;
+  text-align: center;
+  letter-spacing: $ls;
+}
+// Función para font-robot
+@mixin questrial-font($s,$h,$ls) {
+  font-family: 'Questrial', sans-serif;
+  font-size: $s;
+  line-height: $h;
+  text-align: center;
+  letter-spacing: $ls;
+}

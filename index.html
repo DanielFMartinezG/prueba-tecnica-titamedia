@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tita Media</title>
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <!--Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!--Styles-->
+  <link rel="stylesheet" href="./styles/css/styles.css">
+</head>
+<body>
+  <!--_____________________Header section____________________-->
+  <header class="header-section">
+    <div class="brand-container">
+      <img src="./assets/icon.png" alt="logo" class="brand-img">
+      <div class="brand-name-box">
+        <p class="brand-name">sneak</p>
+        <p class="brand-second-name">creative portoflio</p>
+      </div>
+    </div>
+    <input type="checkbox" class="checkbox-menu" id="show-header-menu">
+    <label for="show-header-menu" class="show-menu">
+      <img src="./assets/burger.svg" class="burguer-menu" alt="menú hamburguesa">
+      <img src="./assets/close.svg" class="close-menu" alt="cerrar menú">
+    </label>
+    <!-- menu de opciones  -->
+    <div class="menu-container">
+      <div class="menu-item item-selected">all</div>
+      <div class="menu-item">branding</div>
+      <div class="menu-item">web</div>
+      <div class="menu-item">photography</div>
+      <div class="menu-item">app</div>
+      <img class="menu-item item-search" src="./assets/icon-search.svg" alt="imagen buscar">
+    </div>
+  </header>
+  <!--_______________________Main page________________________-->
+  <main class="page-container">
+    <!--Hero section-->
+    <section class="hero-section">
+      <h1 class="hero-section-title">explore beyond horizon</h1>
+      <p class="hero-section-text">Magna mundi fererrentur quo, no rebum dignissim qui. Per quodsi accusata id, agam labores</p>
+      <div class="button-our-work">view our work</div>
+    </section>
+    <!-- GRID SECITION-->
+    <section class="grid-section">
+      <div class="grid-buttons">
+        <img src="./assets/menu-1.png" alt="item menu" class="bttn-grid">
+        <img src="./assets/menu-2.png" alt="item menu" class="bttn-grid">
+      </div>
+      <div class="grid-container">
+        <div class="grid-column grid-left"></div>
+        <div class="grid-column grid-center"></div>
+        <div class="grid-column grid-right"></div>
+      </div>
+      <div class="button-show">show me more</div>
+    </section>
+  </main>
+  <!--_______________________Footer page________________________-->
+  <footer class="footer-section">
+    <p class="footer-text">@ 2016 - <span class="footer-text-decoration">Sneak</span> All Right Reserved</p>
+    <i class="fab fa-facebook-f footer-item"></i>
+    <i class="fab fa-twitter footer-item"></i>
+    <i class="fab fa-instagram footer-item"></i>
+    <i class="fab fa-google-plus-g footer-item"></i>
+    <i class="fab fa-youtube footer-item"></i>
+  </footer>
+  <!--____________________Brand card template_______________________-->
+  <div class="grid-item" id="grid-card-template">
+    <img src="" alt="imagen de marca" class="grid-item-img">
+    <div class="grid-item-hover">
+      <div class="brand-info-box">
+        <p class="brand-slogan"></p>
+        <hr class="brand-line">
+        <p class="brand-title"></p>
+      </div>
+    </div>
+  </div>
+  <!--_____________________Scripts__________________________-->
+  <script src="./scripts/brands.js"></script>
+  <script src ="./scripts/clone_menu.js"></script>
+  <script src="./scripts/get-brands-info.js"></script>
+  <script src="./scripts/header.js"></script>
+</body>
+
+</html>
